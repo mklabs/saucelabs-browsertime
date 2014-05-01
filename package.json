@@ -8,7 +8,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "node bin/sauce-browsertime http://example.com -n 3 --reporter spec"
+    "test": "SAUCE_USERNAME=mklabs node bin/sauce-browsertime http://example.com -n 3 --reporter spec"
   },
   "license": "ISC",
   "dependencies": {
