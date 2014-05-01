@@ -6,4 +6,4 @@ node_js:
 env:
   global:
     - SAUCE_USERNAME=mklabs
-    - secure: "Ny32SCY7+CKnbL97tiBJ0aGy0UlStSdJXedhwvpWMHOC+qCHioV9U8s7puinIsxdtR54JtBl8jKgfUIJQNnUgd70Ch/SW4nm0BZtHpROguov2k4VMtRtyUT9Q5J6bB+nU2yCywv7uT1F3b1KfVoOyJ8gsL4BOIUxp3fwlJrrSu4="
+    - secure: Ny32SCY7+CKnbL97tiBJ0aGy0UlStSdJXedhwvpWMHOC+qCHioV9U8s7puinIsxdtR54JtBl8jKgfUIJQNnUgd70Ch/SW4nm0BZtHpROguov2k4VMtRtyUT9Q5J6bB+nU2yCywv7uT1F3b1KfVoOyJ8gsL4BOIUxp3fwlJrrSu4=

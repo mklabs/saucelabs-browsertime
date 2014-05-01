@@ -8,7 +8,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "env && node bin/sauce-browsertime http://example.com -n 3 --reporter spec"
+    "test": "node bin/sauce-browsertime http://example.com -n 3 --reporter spec"
   },
   "license": "ISC",
   "dependencies": {
