@@ -5,5 +5,9 @@ env:
     - secure: "NCLrhU8gRs41ivFACo8AW4dv2zwI5USqdigC0b0P0REcaZL4+alZz59Cum2rvU4RU7BrorE61xVVRlESzw4OqOMBJlc0FsT82CiCWW2GFSq6WU9c9zUSiMxN/tudM12xUES47WBXcA20yFYsZe8okDuEe0s0Ry8ZfF3cQx9hvEo="
     - secure: "ReXqAX6ZOFkKQIZ73B5y4ZQlXTbjvfZxBP5ryPlSXxAA+EJtSxtOkm4A9p4WzjTxWCcU+qhJWi3WNd7kVuqku+2/N4IKZcVGxgQ+3z45wsLQE7n0vJrQ7dxiwDMhCsJprjG/WCxqdxWRec1EK/a1zVerZAn/rRPlwz01K/7L63M="
 
+node_js:
+  - "0.11"
+  - "0.10"
+
 # before_script:
 # - curl https://gist.github.com/santiycr/5139565/raw/sauce_connect_setup.sh | bash
