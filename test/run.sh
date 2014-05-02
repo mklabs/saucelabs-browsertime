@@ -82,6 +82,7 @@ var body = [
 '<body>',
 links.join('\n'),
 index ? '<p>Last build: <a href="$RESULT_DIR">$BUILD_NUMBER</a></p>' : '',
+index ? '<p><a href="https://travis-ci.org/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID">Travis Job</a> / <a href="https://s3.amazonaws.com/archive.travis-ci.org/jobs/$TRAVIS_BUILD_ID/log.txt">Logs</a></p>' : '',
 '</body>',
 '</html>'
 ];
