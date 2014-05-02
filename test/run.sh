@@ -47,7 +47,7 @@ var index = args[0] === 'index';
 if (index) dir = path.join(dir, '..');
 
 var files = fs.readdirSync(dir).filter(function(file) {
-  return index ? fs.statSync(file).isDirectory() : path.extname(file) === '.html' && file !== 'index.html';
+  return index ? fs.statSync(path.join(dir, file)).isDirectory() : path.extname(file) === '.html' && file !== 'index.html';
 });
 
 var imgs = links ? files.map(function(file) {
