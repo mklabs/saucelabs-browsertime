@@ -14,25 +14,21 @@ BROWSERS_HTML=$(node -pe "b = '$SAUCE_BROWSERS'; b.split(/,\s?/).join('.html ')"
 
 # URL_KEY=$(node -pe 'process.argv.slice(1)[0].replace(/(^https?:\/\/)|(\/$)/g, "").replace(/(\/|\?|-|&amp;|=|\.)/g, "_")' "$url");
 
-PATH=./bin:$PATH
-
 rm -rf results/last
-
-env
 
 for browser in $BROWSERS; do
   mkdir -p $RESULT_DIR/$browser
   bro=$browser
   [ "ie" == $browser ] && bro="internet explorer"
 
-  sauce-browsertime $PERF_URLS --browser "$bro" -n $PERF_RUNS \
+  node bin/sauce-browsertime $PERF_URLS --browser "$bro" -n $PERF_RUNS \
     --output $RESULT_DIR/$browser/metrics.json \
     --reporter spec || exit 1
 
   [ "android" == $browser ] && bro="chrome-android"
   [ "ie" == $browser ] && bro="internet-explorer"
-  sauce-browsertime-html $RESULT_DIR/$browser/metrics.json -b "$bro" > $RESULT_DIR/$browser/index.html
-  sauce-browsertime-html $RESULT_DIR/$browser/metrics.json -b "$bro" >  $RESULT_DIR/$browser.html
+  node bin/sauce-browsertime-html $RESULT_DIR/$browser/metrics.json -b "$bro" > $RESULT_DIR/$browser/index.html
+  node bin/sauce-browsertime-html $RESULT_DIR/$browser/metrics.json -b "$bro" >  $RESULT_DIR/$browser.html
   head -n 75 $RESULT_DIR/$browser/metrics.json
 done
 
