@@ -16,7 +16,7 @@ git add results -f || exit 1
 git add index.html || exit 1
 
 git status || exit 1
-git commit -m "Build #$TRAVIS_BUILD_NUMBER - Publishing $TRAVIS_COMMIT results" || exit 1
+git commit -m "Build #$TRAVIS_BUILD_NUMBER - Publishing $TRAVIS_COMMIT results\n\n$DEPLOY_URL/results/$TRAVIS_BUILD_NUMBER" || exit 1
 echo "Pushing to repo.."
 git push origin $DEPLOY_BRANCH || exit 1
 echo "Published"

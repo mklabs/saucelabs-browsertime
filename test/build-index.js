@@ -6,16 +6,6 @@ var args = process.argv.slice(2);
 var dir = args[0];
 var index = args[1] === 'index';
 
-// link helper
-var prefix = process.env.HTML_PREFIX || '/';
-function a(href, txt, title) {
-  title = title || href;
-  return '<a href="$href" title="$title">$txt</a>'
-    .replace(/\$href/, prefix + href)
-    .replace(/\$txt/, txt)
-    .replace(/\$title/, title);
-}
-
 // Env
 var env = process.env;
 env.BUILD_NUMBER = env.BUILD_NUMBER || env.TRAVIS_BUILD_NUMBER || 'last';
@@ -25,6 +15,17 @@ env =
   .reduce(function(env, prop) { env[prop.name] = prop.value; return env; }, {});
 
 env.RESULT_DIR = dir;
+
+// link helper
+var prefix = process.env.HTML_PREFIX || '/saucelabs-browsertime/';
+function a(href, txt, title) {
+  title = title || href;
+  return '<a href="$href" title="$title">$txt</a>'
+    .replace(/\$href/, prefix + href)
+    .replace(/\$txt/, txt)
+    .replace(/\$title/, title);
+}
+
 
 if (index) dir = path.join(dir, '..');
 
@@ -76,7 +77,7 @@ links.join('\n'),
 '',
 '<p>Last build: ' + a( env.RESULT_DIR + '/', 'Build #' + env.BUILD_NUMBER) + ' / ',
 '',
-'<a href="https://travis-ci.org/' + env.TRAVIS_REPO_SLUG + '/builds/' + env.TRAVIS_BUILD_ID + '">Travis Job</a> / ',
+'<a href="https://travis-ci.org/' + env.TRAVIS_REPO_SLUG + '/builds/' + parseInt(env.TRAVIS_BUILD_ID, 10) + 1 + '">Travis Job</a> / ',
 '<a href="' + s3 + '/' + env.TRAVIS_BUILD_ID + '/log.txt">Logs</a>',
 '</p>',
 '',
