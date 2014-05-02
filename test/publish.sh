@@ -1,6 +1,9 @@
 #!/bin/bash
 
+env
+
 cd $TRAVIS_BUILD_DIR
+pwd
 
 git remote set-branches --add origin $DEPLOY_BRANCH || exit 1
 echo "Remote set to $DEPLOY_BRANCH"

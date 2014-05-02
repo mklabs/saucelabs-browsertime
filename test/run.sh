@@ -5,6 +5,7 @@ BUILD_NUMBER=${TRAVIS_COMMIT:-last}
 SAUCE_BROWSERS='chrome, firefox'
 PERF_URLS=${PERF_URLS:-"http://caniuse.com/nav-timing https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/NavigationTiming/Overview.html"}
 PERF_RUNS=3
+CWD=$(pwd)
 
 RESULT_DIR=results/$BUILD_NUMBER
 
@@ -16,6 +17,9 @@ BROWSERS_HTML=$(node -pe "b = '$SAUCE_BROWSERS'; b.split(/,\s?/).join('.html ')"
 
 rm -rf results/last
 
+echo "CWD: $CWD"
+echo "Output: $RESULT_DIR"
+
 for browser in $BROWSERS; do
   mkdir -p $RESULT_DIR/$browser
   bro=$browser
@@ -24,7 +28,10 @@ for browser in $BROWSERS; do
     --output $RESULT_DIR/$browser/metrics.json \
     --reporter spec || exit 1
 
+  echo "... Generate  $RESULT_DIR/$browser/index.html ..."
   DEBUG=* node bin/sauce-browsertime-html $RESULT_DIR/$browser/metrics.json -b "$bro" > $RESULT_DIR/$browser/index.html
+
+  echo "... Generate  $RESULT_DIR/$browser.html ..."
   DEBUG=* node bin/sauce-browsertime-html $RESULT_DIR/$browser/metrics.json -b "$bro" >  $RESULT_DIR/$browser.html
 done
 
@@ -74,6 +81,7 @@ console.log(body.join('\n'));
 
 EOF
 
+echo "... Generate  $RESULT_DIR/index.html ..."
 node build-index.js > $RESULT_DIR/index.html
 rm build-index.js
 
