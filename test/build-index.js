@@ -89,8 +89,8 @@ links.join('\n'),
 '',
 '<hr />',
 '',
-'<a href="https://travis-ci.org/' + env.TRAVIS_REPO_SLUG + '/builds/' + parseInt(env.TRAVIS_BUILD_ID, 10) + 1 + '">Travis Job</a> / ',
-'<a href="' + s3 + '/' + env.TRAVIS_BUILD_ID + '/log.txt">Logs</a>',
+'<a href="https://travis-ci.org/' + env.TRAVIS_REPO_SLUG + '/builds/' + env.TRAVIS_BUILD_ID + '">Travis Job</a> / ',
+'<a href="' + s3 + '/' + (parseInt(env.TRAVIS_BUILD_ID, 10) + 1) + '/log.txt">Logs</a>',
 '</p>',
 ''
 ].join('\n');

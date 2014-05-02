@@ -23,8 +23,12 @@ Travis publish $TRAVIS_COMMIT results ($TRAVIS_BUILD_NUMBER)
 $DEPLOY_URL/results/$TRAVIS_BUILD_NUMBER
 EOF
 
+git checkout -b $DEPLOY_BRANCH origin/$DEPLOY_BRANCH || exit 1
+
+git status
+git show
+
 echo "Merging build-$TRAVIS_BUILD_NUMBER -> $DEPLOY_BRANCH"
-git checkout $DEPLOY_BRANCH || exit 1
 git merge build-$TRAVIS_BUILD_NUMBER -s recursive -X theirs -m "Travis merge build $TRAVIS_BUILD_NUMBER" || exit 1
 
 echo "Cleanup build branch: b-$TRAVIS_BUILD_NUMBER"
