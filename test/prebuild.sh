@@ -16,5 +16,4 @@ git remote add origin $REPO_URL
 git config remote.origin.url $REPO_URL
 
 git show
-
-ls
+exit 0
