@@ -19,7 +19,8 @@ rm -rf results/last
 for browser in $BROWSERS; do
   mkdir -p $RESULT_DIR/$browser
   bro=$browser
-  [[ "ie" == $browser ]] && bro="internet explorer"
+
+  if [[ "ie" == $browser ]]; then bro="internet explorer"; fi
 
   node bin/sauce-browsertime $PERF_URLS --browser "$bro" -n $PERF_RUNS \
     --output $RESULT_DIR/$browser/metrics.json \
@@ -27,6 +28,9 @@ for browser in $BROWSERS; do
 
   [[ "android" == $browser ]] && bro="chrome-android"
   [[ "ie" == $browser ]] && bro="internet-explorer"
+
+  if [[ "ie" == $browser ]]; then bro="internet explorer"; fi
+  if [[ "android" == $browser ]]; then bro="chrome-android"; fi
   node bin/sauce-browsertime-html $RESULT_DIR/$browser/metrics.json -b "$bro" > $RESULT_DIR/$browser/index.html
   node bin/sauce-browsertime-html $RESULT_DIR/$browser/metrics.json -b "$bro" >  $RESULT_DIR/$browser.html
   head -n 75 $RESULT_DIR/$browser/metrics.json
