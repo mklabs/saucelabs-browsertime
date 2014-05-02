@@ -1,3 +1,4 @@
+#!/bin/bash
 
 
 git remote set-branches --add origin $DEPLOY_BRANCH
