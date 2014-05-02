@@ -2,4 +2,4 @@ http://caniuse.com/nav-timing
 https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/NavigationTiming/Overview.html
 http://mkla.bz/saucelabs-browsertime/
 http://mkla.bz/saucelabs-browsertime/results/
-http://mkla.bz/saucelabs-browsertime/results/last/http://mkla.bz/saucelabs-browsertime/results/last/
+http://mkla.bz/saucelabs-browsertime/results/last/

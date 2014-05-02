@@ -1,6 +1,6 @@
 {
 
-  "browsers": [ "chrome", "firefox", "ie", "android"],
+  "browsers": [ "chrome", "firefox", "ie", "android" ],
 
   "ie": {
     "name": "internet explorer",
