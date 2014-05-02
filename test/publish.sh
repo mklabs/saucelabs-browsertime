@@ -20,7 +20,7 @@ git commit -m "Build #$TRAVIS_BUILD_NUMBER - Publishing $TRAVIS_COMMIT results\n
 
 echo "Merging build-$TRAVIS_BUILD_NUMBER -> $DEPLOY_BRANCH"
 git checkout $DEPLOY_BRANCH || exit 1
-git merge build-$TRAVIS_BUILD_NUMBER || exit 1
+git merge build-$TRAVIS_BUILD_NUMBER -s ours || exit 1
 
 echo "Cleanup build branch: b-$TRAVIS_BUILD_NUMBER"
 git branch -D build-$TRAVIS_BUILD_NUMBER
