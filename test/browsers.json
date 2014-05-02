@@ -1,0 +1,15 @@
+{
+
+  "browsers": [ "chrome", "firefox", "ie", "android"],
+
+  "ie": {
+    "name": "internet explorer",
+    "logo": "internet-explorer"
+  },
+
+  "android": {
+    "name": "android",
+    "logo": "chrome-android"
+  }
+
+}
