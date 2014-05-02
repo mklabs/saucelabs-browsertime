@@ -16,8 +16,7 @@ BROWSERS_HTML=$(node -pe "b = '$SAUCE_BROWSERS'; b.split(/,\s?/).join('.html ')"
 
 PATH=./bin:$PATH
 
-rm -rf reports
-mkdir -p reports
+rm -rf results/last
 
 for browser in $BROWSERS; do
   mkdir -p $RESULT_DIR/$browser

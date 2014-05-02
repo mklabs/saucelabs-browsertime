@@ -16,4 +16,4 @@ before_script:
   - npm run prebuild
 
 after_script:
-  - npm run postbuild
+  - npm run publish

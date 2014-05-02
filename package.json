@@ -10,7 +10,7 @@
   "scripts": {
     "test": "sh test/run.sh",
     "prebuild": "sh test/prebuild.sh",
-    "postbuild": "sh test/postbuild.sh"
+    "publish": "sh test/publish.sh"
   },
   "license": "ISC",
   "dependencies": {
