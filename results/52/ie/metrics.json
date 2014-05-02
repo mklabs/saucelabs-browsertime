@@ -1,0 +1,1852 @@
+{
+  "caps": {
+    "takesScreenshot": true,
+    "enableElementCacheCleanup": true,
+    "unexpectedAlertBehaviour": "dismiss",
+    "cssSelectorsEnabled": true,
+    "javascriptEnabled": true,
+    "webdriver.remote.sessionid": "3dcb2d19-49f9-486d-9781-cf14d03bb060",
+    "allowAsynchronousJavaScript": false,
+    "requireWindowFocus": false,
+    "browserName": "internet explorer",
+    "version": "11",
+    "elementScrollBehavior": 0,
+    "platform": "WINDOWS",
+    "nativeEvents": true,
+    "ignoreProtectedModeSettings": false,
+    "ignoreZoomSetting": false,
+    "hasMetadata": true,
+    "initialBrowserUrl": "",
+    "handlesAlerts": true,
+    "enablePersistentHover": true
+  },
+  "stats": {
+    "http://caniuse.com/nav-timing": {
+      "domainLookupTime": {
+        "min": 0,
+        "max": 0,
+        "avg": 0,
+        "median": 0,
+        "mad": 0,
+        "p60": 0,
+        "p70": 0,
+        "p80": 0,
+        "p90": 0
+      },
+      "redirectionTime": {
+        "min": 0,
+        "max": 0,
+        "avg": 0,
+        "median": 0,
+        "mad": 0,
+        "p60": 0,
+        "p70": 0,
+        "p80": 0,
+        "p90": 0
+      },
+      "serverConnectionTime": {
+        "min": 0,
+        "max": 0,
+        "avg": 0,
+        "median": 0,
+        "mad": 0,
+        "p60": 0,
+        "p70": 0,
+        "p80": 0,
+        "p90": 0
+      },
+      "serverResponseTime": {
+        "min": 0,
+        "max": 2,
+        "avg": 0.6666666666666666,
+        "median": 0,
+        "mad": 0,
+        "p60": 0,
+        "p70": 2,
+        "p80": 2,
+        "p90": 2
+      },
+      "pageDownloadTime": {
+        "min": 1,
+        "max": 2,
+        "avg": 1.3333333333333333,
+        "median": 1,
+        "mad": 0,
+        "p60": 1,
+        "p70": 2,
+        "p80": 2,
+        "p90": 2
+      },
+      "domInteractiveTime": {
+        "min": 174,
+        "max": 284,
+        "avg": 215.66666666666666,
+        "median": 189,
+        "mad": 15,
+        "p60": 189,
+        "p70": 284,
+        "p80": 284,
+        "p90": 284
+      },
+      "domContentLoadedTime": {
+        "min": 174,
+        "max": 284,
+        "avg": 215.66666666666666,
+        "median": 189,
+        "mad": 15,
+        "p60": 189,
+        "p70": 284,
+        "p80": 284,
+        "p90": 284
+      },
+      "pageLoadTime": {
+        "min": 183,
+        "max": 6898,
+        "avg": 2426.3333333333335,
+        "median": 198,
+        "mad": 15,
+        "p60": 198,
+        "p70": 6898,
+        "p80": 6898,
+        "p90": 6898
+      },
+      "frontEndTime": {
+        "min": 181,
+        "max": 6790,
+        "avg": 2388.6666666666665,
+        "median": 195,
+        "mad": 14,
+        "p60": 195,
+        "p70": 6790,
+        "p80": 6790,
+        "p90": 6790
+      },
+      "backEndTime": {
+        "min": 1,
+        "max": 106,
+        "avg": 36.333333333333336,
+        "median": 2,
+        "mad": 1,
+        "p60": 2,
+        "p70": 106,
+        "p80": 106,
+        "p90": 106
+      }
+    },
+    "https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/NavigationTiming/Overview.html": {
+      "domainLookupTime": {
+        "min": 0,
+        "max": 0,
+        "avg": 0,
+        "median": 0,
+        "mad": 0,
+        "p60": 0,
+        "p70": 0,
+        "p80": 0,
+        "p90": 0
+      },
+      "redirectionTime": {
+        "min": 0,
+        "max": 1,
+        "avg": 0.3333333333333333,
+        "median": 0,
+        "mad": 0,
+        "p60": 0,
+        "p70": 1,
+        "p80": 1,
+        "p90": 1
+      },
+      "serverConnectionTime": {
+        "min": 0,
+        "max": 0,
+        "avg": 0,
+        "median": 0,
+        "mad": 0,
+        "p60": 0,
+        "p70": 0,
+        "p80": 0,
+        "p90": 0
+      },
+      "serverResponseTime": {
+        "min": 1,
+        "max": 73,
+        "avg": 25,
+        "median": 1,
+        "mad": 0,
+        "p60": 1,
+        "p70": 73,
+        "p80": 73,
+        "p90": 73
+      },
+      "pageDownloadTime": {
+        "min": 1,
+        "max": 75,
+        "avg": 25.666666666666668,
+        "median": 1,
+        "mad": 0,
+        "p60": 1,
+        "p70": 75,
+        "p80": 75,
+        "p90": 75
+      },
+      "domInteractiveTime": {
+        "min": 125,
+        "max": 1066,
+        "avg": 439,
+        "median": 126,
+        "mad": 1,
+        "p60": 126,
+        "p70": 1066,
+        "p80": 1066,
+        "p90": 1066
+      },
+      "domContentLoadedTime": {
+        "min": 125,
+        "max": 1066,
+        "avg": 439,
+        "median": 126,
+        "mad": 1,
+        "p60": 126,
+        "p70": 1066,
+        "p80": 1066,
+        "p90": 1066
+      },
+      "pageLoadTime": {
+        "min": 163,
+        "max": 1164,
+        "avg": 496.6666666666667,
+        "median": 163,
+        "mad": 0,
+        "p60": 163,
+        "p70": 1164,
+        "p80": 1164,
+        "p90": 1164
+      },
+      "frontEndTime": {
+        "min": 75,
+        "max": 442,
+        "avg": 197.66666666666666,
+        "median": 76,
+        "mad": 1,
+        "p60": 76,
+        "p70": 442,
+        "p80": 442,
+        "p90": 442
+      },
+      "backEndTime": {
+        "min": 86,
+        "max": 647,
+        "avg": 273.3333333333333,
+        "median": 87,
+        "mad": 1,
+        "p60": 87,
+        "p70": 647,
+        "p80": 647,
+        "p90": 647
+      }
+    },
+    "http://mkla.bz/saucelabs-browsertime/": {
+      "domainLookupTime": {
+        "min": 0,
+        "max": 0,
+        "avg": 0,
+        "median": 0,
+        "mad": 0,
+        "p60": 0,
+        "p70": 0,
+        "p80": 0,
+        "p90": 0
+      },
+      "redirectionTime": {
+        "min": 0,
+        "max": 443,
+        "avg": 147.66666666666666,
+        "median": 0,
+        "mad": 0,
+        "p60": 0,
+        "p70": 443,
+        "p80": 443,
+        "p90": 443
+      },
+      "serverConnectionTime": {
+        "min": 0,
+        "max": 0,
+        "avg": 0,
+        "median": 0,
+        "mad": 0,
+        "p60": 0,
+        "p70": 0,
+        "p80": 0,
+        "p90": 0
+      },
+      "serverResponseTime": {
+        "min": 0,
+        "max": 1,
+        "avg": 0.3333333333333333,
+        "median": 0,
+        "mad": 0,
+        "p60": 0,
+        "p70": 1,
+        "p80": 1,
+        "p90": 1
+      },
+      "pageDownloadTime": {
+        "min": 1,
+        "max": 86,
+        "avg": 29.333333333333332,
+        "median": 1,
+        "mad": 0,
+        "p60": 1,
+        "p70": 86,
+        "p80": 86,
+        "p90": 86
+      },
+      "domInteractiveTime": {
+        "min": 37,
+        "max": 531,
+        "avg": 207.33333333333334,
+        "median": 54,
+        "mad": 17,
+        "p60": 54,
+        "p70": 531,
+        "p80": 531,
+        "p90": 531
+      },
+      "domContentLoadedTime": {
+        "min": 37,
+        "max": 531,
+        "avg": 207.33333333333334,
+        "median": 54,
+        "mad": 17,
+        "p60": 54,
+        "p70": 531,
+        "p80": 531,
+        "p90": 531
+      },
+      "pageLoadTime": {
+        "min": 133,
+        "max": 1503,
+        "avg": 592,
+        "median": 140,
+        "mad": 7,
+        "p60": 140,
+        "p70": 1503,
+        "p80": 1503,
+        "p90": 1503
+      },
+      "frontEndTime": {
+        "min": 131,
+        "max": 973,
+        "avg": 414,
+        "median": 138,
+        "mad": 7,
+        "p60": 138,
+        "p70": 973,
+        "p80": 973,
+        "p90": 973
+      },
+      "backEndTime": {
+        "min": 1,
+        "max": 444,
+        "avg": 148.66666666666666,
+        "median": 1,
+        "mad": 0,
+        "p60": 1,
+        "p70": 444,
+        "p80": 444,
+        "p90": 444
+      }
+    },
+    "http://mkla.bz/saucelabs-browsertime/results/": {
+      "domainLookupTime": {
+        "min": 0,
+        "max": 0,
+        "avg": 0,
+        "median": 0,
+        "mad": 0,
+        "p60": 0,
+        "p70": 0,
+        "p80": 0,
+        "p90": 0
+      },
+      "redirectionTime": {
+        "min": 0,
+        "max": 0,
+        "avg": 0,
+        "median": 0,
+        "mad": 0,
+        "p60": 0,
+        "p70": 0,
+        "p80": 0,
+        "p90": 0
+      },
+      "serverConnectionTime": {
+        "min": 0,
+        "max": 0,
+        "avg": 0,
+        "median": 0,
+        "mad": 0,
+        "p60": 0,
+        "p70": 0,
+        "p80": 0,
+        "p90": 0
+      },
+      "serverResponseTime": {
+        "min": 0,
+        "max": 1,
+        "avg": 0.3333333333333333,
+        "median": 0,
+        "mad": 0,
+        "p60": 0,
+        "p70": 1,
+        "p80": 1,
+        "p90": 1
+      },
+      "pageDownloadTime": {
+        "min": 1,
+        "max": 1,
+        "avg": 1,
+        "median": 1,
+        "mad": 0,
+        "p60": 1,
+        "p70": 1,
+        "p80": 1,
+        "p90": 1
+      },
+      "domInteractiveTime": {
+        "min": 49,
+        "max": 121,
+        "avg": 73.66666666666667,
+        "median": 51,
+        "mad": 2,
+        "p60": 51,
+        "p70": 121,
+        "p80": 121,
+        "p90": 121
+      },
+      "domContentLoadedTime": {
+        "min": 49,
+        "max": 121,
+        "avg": 73.66666666666667,
+        "median": 51,
+        "mad": 2,
+        "p60": 51,
+        "p70": 121,
+        "p80": 121,
+        "p90": 121
+      },
+      "pageLoadTime": {
+        "min": 56,
+        "max": 130,
+        "avg": 81.33333333333333,
+        "median": 58,
+        "mad": 2,
+        "p60": 58,
+        "p70": 130,
+        "p80": 130,
+        "p90": 130
+      },
+      "frontEndTime": {
+        "min": 52,
+        "max": 55,
+        "avg": 53.333333333333336,
+        "median": 53,
+        "mad": 1,
+        "p60": 53,
+        "p70": 55,
+        "p80": 55,
+        "p90": 55
+      },
+      "backEndTime": {
+        "min": 2,
+        "max": 77,
+        "avg": 27,
+        "median": 2,
+        "mad": 0,
+        "p60": 2,
+        "p70": 77,
+        "p80": 77,
+        "p90": 77
+      }
+    },
+    "http://mkla.bz/saucelabs-browsertime/results/last/": {
+      "domainLookupTime": {
+        "min": 0,
+        "max": 0,
+        "avg": 0,
+        "median": 0,
+        "mad": 0,
+        "p60": 0,
+        "p70": 0,
+        "p80": 0,
+        "p90": 0
+      },
+      "redirectionTime": {
+        "min": 0,
+        "max": 0,
+        "avg": 0,
+        "median": 0,
+        "mad": 0,
+        "p60": 0,
+        "p70": 0,
+        "p80": 0,
+        "p90": 0
+      },
+      "serverConnectionTime": {
+        "min": 0,
+        "max": 0,
+        "avg": 0,
+        "median": 0,
+        "mad": 0,
+        "p60": 0,
+        "p70": 0,
+        "p80": 0,
+        "p90": 0
+      },
+      "serverResponseTime": {
+        "min": 1,
+        "max": 1,
+        "avg": 1,
+        "median": 1,
+        "mad": 0,
+        "p60": 1,
+        "p70": 1,
+        "p80": 1,
+        "p90": 1
+      },
+      "pageDownloadTime": {
+        "min": 1,
+        "max": 3,
+        "avg": 2,
+        "median": 2,
+        "mad": 1,
+        "p60": 2,
+        "p70": 3,
+        "p80": 3,
+        "p90": 3
+      },
+      "domInteractiveTime": {
+        "min": 95,
+        "max": 102,
+        "avg": 98,
+        "median": 97,
+        "mad": 2,
+        "p60": 97,
+        "p70": 102,
+        "p80": 102,
+        "p90": 102
+      },
+      "domContentLoadedTime": {
+        "min": 95,
+        "max": 102,
+        "avg": 98,
+        "median": 97,
+        "mad": 2,
+        "p60": 97,
+        "p70": 102,
+        "p80": 102,
+        "p90": 102
+      },
+      "pageLoadTime": {
+        "min": 101,
+        "max": 106,
+        "avg": 103,
+        "median": 102,
+        "mad": 1,
+        "p60": 102,
+        "p70": 106,
+        "p80": 106,
+        "p90": 106
+      },
+      "frontEndTime": {
+        "min": 22,
+        "max": 27,
+        "avg": 24.333333333333332,
+        "median": 24,
+        "mad": 2,
+        "p60": 24,
+        "p70": 27,
+        "p80": 27,
+        "p90": 27
+      },
+      "backEndTime": {
+        "min": 76,
+        "max": 77,
+        "avg": 76.66666666666667,
+        "median": 77,
+        "mad": 0,
+        "p60": 77,
+        "p70": 77,
+        "p80": 77,
+        "p90": 77
+      }
+    }
+  },
+  "data": [
+    {
+      "url": "http://caniuse.com/nav-timing",
+      "platform": {
+        "browserName": "internet explorer",
+        "name": "Collecting Navigation Timings with internet explorer",
+        "tags": [
+          "sauce-browsertime"
+        ]
+      },
+      "data": [
+        {
+          "timings": {
+            "timing": {
+              "navigationStart": 1399020198120,
+              "unloadEventStart": 0,
+              "unloadEventEnd": 0,
+              "redirectStart": 0,
+              "redirectEnd": 0,
+              "fetchStart": 1399020198120,
+              "domainLookupStart": 1399020198120,
+              "domainLookupEnd": 1399020198120,
+              "connectStart": 1399020198120,
+              "connectEnd": 1399020198120,
+              "requestStart": 1399020198224,
+              "responseStart": 1399020198226,
+              "responseEnd": 1399020198228,
+              "domLoading": 1399020198226,
+              "domInteractive": 1399020198404,
+              "domContentLoadedEventStart": 1399020198404,
+              "domContentLoadedEventEnd": 1399020198404,
+              "domComplete": 1399020205017,
+              "loadEventStart": 1399020205018,
+              "loadEventEnd": 1399020205029,
+              "msFirstPaint": 1399020198503
+            },
+            "navigation": {
+              "redirectCount": 0,
+              "type": 0
+            }
+          },
+          "intervals": {
+            "domainLookupTime": 0,
+            "redirectionTime": 0,
+            "serverConnectionTime": 0,
+            "serverResponseTime": 2,
+            "pageDownloadTime": 2,
+            "domInteractiveTime": 284,
+            "domContentLoadedTime": 284,
+            "pageLoadTime": 6898,
+            "frontEndTime": 6790,
+            "backEndTime": 106
+          }
+        },
+        {
+          "timings": {
+            "timing": {
+              "navigationStart": 1399020206055,
+              "unloadEventStart": 1399020206067,
+              "unloadEventEnd": 1399020206067,
+              "redirectStart": 0,
+              "redirectEnd": 0,
+              "fetchStart": 1399020206055,
+              "domainLookupStart": 1399020206056,
+              "domainLookupEnd": 1399020206056,
+              "connectStart": 1399020206056,
+              "connectEnd": 1399020206056,
+              "requestStart": 1399020206056,
+              "responseStart": 1399020206056,
+              "responseEnd": 1399020206057,
+              "domLoading": 1399020206056,
+              "domInteractive": 1399020206229,
+              "domContentLoadedEventStart": 1399020206229,
+              "domContentLoadedEventEnd": 1399020206229,
+              "domComplete": 1399020206237,
+              "loadEventStart": 1399020206238,
+              "loadEventEnd": 1399020206245,
+              "msFirstPaint": 1399020206354
+            },
+            "navigation": {
+              "redirectCount": 0,
+              "type": 0
+            }
+          },
+          "intervals": {
+            "domainLookupTime": 0,
+            "redirectionTime": 0,
+            "serverConnectionTime": 0,
+            "serverResponseTime": 0,
+            "pageDownloadTime": 1,
+            "domInteractiveTime": 174,
+            "domContentLoadedTime": 174,
+            "pageLoadTime": 183,
+            "frontEndTime": 181,
+            "backEndTime": 1
+          }
+        },
+        {
+          "timings": {
+            "timing": {
+              "navigationStart": 1399020207937,
+              "unloadEventStart": 1399020207946,
+              "unloadEventEnd": 1399020207946,
+              "redirectStart": 0,
+              "redirectEnd": 0,
+              "fetchStart": 1399020207937,
+              "domainLookupStart": 1399020207939,
+              "domainLookupEnd": 1399020207939,
+              "connectStart": 1399020207939,
+              "connectEnd": 1399020207939,
+              "requestStart": 1399020207939,
+              "responseStart": 1399020207939,
+              "responseEnd": 1399020207940,
+              "domLoading": 1399020207939,
+              "domInteractive": 1399020208126,
+              "domContentLoadedEventStart": 1399020208126,
+              "domContentLoadedEventEnd": 1399020208126,
+              "domComplete": 1399020208134,
+              "loadEventStart": 1399020208135,
+              "loadEventEnd": 1399020208146,
+              "msFirstPaint": 1399020208303
+            },
+            "navigation": {
+              "redirectCount": 0,
+              "type": 0
+            }
+          },
+          "intervals": {
+            "domainLookupTime": 0,
+            "redirectionTime": 0,
+            "serverConnectionTime": 0,
+            "serverResponseTime": 0,
+            "pageDownloadTime": 1,
+            "domInteractiveTime": 189,
+            "domContentLoadedTime": 189,
+            "pageLoadTime": 198,
+            "frontEndTime": 195,
+            "backEndTime": 2
+          }
+        }
+      ],
+      "stats": {
+        "domainLookupTime": {
+          "min": 0,
+          "max": 0,
+          "avg": 0,
+          "median": 0,
+          "mad": 0,
+          "p60": 0,
+          "p70": 0,
+          "p80": 0,
+          "p90": 0
+        },
+        "redirectionTime": {
+          "min": 0,
+          "max": 0,
+          "avg": 0,
+          "median": 0,
+          "mad": 0,
+          "p60": 0,
+          "p70": 0,
+          "p80": 0,
+          "p90": 0
+        },
+        "serverConnectionTime": {
+          "min": 0,
+          "max": 0,
+          "avg": 0,
+          "median": 0,
+          "mad": 0,
+          "p60": 0,
+          "p70": 0,
+          "p80": 0,
+          "p90": 0
+        },
+        "serverResponseTime": {
+          "min": 0,
+          "max": 2,
+          "avg": 0.6666666666666666,
+          "median": 0,
+          "mad": 0,
+          "p60": 0,
+          "p70": 2,
+          "p80": 2,
+          "p90": 2
+        },
+        "pageDownloadTime": {
+          "min": 1,
+          "max": 2,
+          "avg": 1.3333333333333333,
+          "median": 1,
+          "mad": 0,
+          "p60": 1,
+          "p70": 2,
+          "p80": 2,
+          "p90": 2
+        },
+        "domInteractiveTime": {
+          "min": 174,
+          "max": 284,
+          "avg": 215.66666666666666,
+          "median": 189,
+          "mad": 15,
+          "p60": 189,
+          "p70": 284,
+          "p80": 284,
+          "p90": 284
+        },
+        "domContentLoadedTime": {
+          "min": 174,
+          "max": 284,
+          "avg": 215.66666666666666,
+          "median": 189,
+          "mad": 15,
+          "p60": 189,
+          "p70": 284,
+          "p80": 284,
+          "p90": 284
+        },
+        "pageLoadTime": {
+          "min": 183,
+          "max": 6898,
+          "avg": 2426.3333333333335,
+          "median": 198,
+          "mad": 15,
+          "p60": 198,
+          "p70": 6898,
+          "p80": 6898,
+          "p90": 6898
+        },
+        "frontEndTime": {
+          "min": 181,
+          "max": 6790,
+          "avg": 2388.6666666666665,
+          "median": 195,
+          "mad": 14,
+          "p60": 195,
+          "p70": 6790,
+          "p80": 6790,
+          "p90": 6790
+        },
+        "backEndTime": {
+          "min": 1,
+          "max": 106,
+          "avg": 36.333333333333336,
+          "median": 2,
+          "mad": 1,
+          "p60": 2,
+          "p70": 106,
+          "p80": 106,
+          "p90": 106
+        }
+      }
+    },
+    {
+      "url": "https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/NavigationTiming/Overview.html",
+      "platform": {
+        "browserName": "internet explorer",
+        "name": "Collecting Navigation Timings with internet explorer",
+        "tags": [
+          "sauce-browsertime"
+        ]
+      },
+      "data": [
+        {
+          "timings": {
+            "timing": {
+              "navigationStart": 1399020209940,
+              "unloadEventStart": 0,
+              "unloadEventEnd": 0,
+              "redirectStart": 0,
+              "redirectEnd": 0,
+              "fetchStart": 1399020209941,
+              "domainLookupStart": 1399020209941,
+              "domainLookupEnd": 1399020209941,
+              "connectStart": 1399020209941,
+              "connectEnd": 1399020209941,
+              "requestStart": 1399020210514,
+              "responseStart": 1399020210587,
+              "responseEnd": 1399020210662,
+              "domLoading": 1399020210587,
+              "domInteractive": 1399020211006,
+              "domContentLoadedEventStart": 1399020211006,
+              "domContentLoadedEventEnd": 1399020211006,
+              "domComplete": 1399020211102,
+              "loadEventStart": 1399020211104,
+              "loadEventEnd": 1399020211104,
+              "msFirstPaint": 1399020211051
+            },
+            "navigation": {
+              "redirectCount": 0,
+              "type": 0
+            }
+          },
+          "intervals": {
+            "domainLookupTime": 0,
+            "redirectionTime": 1,
+            "serverConnectionTime": 0,
+            "serverResponseTime": 73,
+            "pageDownloadTime": 75,
+            "domInteractiveTime": 1066,
+            "domContentLoadedTime": 1066,
+            "pageLoadTime": 1164,
+            "frontEndTime": 442,
+            "backEndTime": 647
+          }
+        },
+        {
+          "timings": {
+            "timing": {
+              "navigationStart": 1399020211940,
+              "unloadEventStart": 1399020212033,
+              "unloadEventEnd": 1399020212033,
+              "redirectStart": 0,
+              "redirectEnd": 0,
+              "fetchStart": 1399020211940,
+              "domainLookupStart": 1399020211940,
+              "domainLookupEnd": 1399020211940,
+              "connectStart": 1399020211940,
+              "connectEnd": 1399020211940,
+              "requestStart": 1399020212025,
+              "responseStart": 1399020212026,
+              "responseEnd": 1399020212027,
+              "domLoading": 1399020212026,
+              "domInteractive": 1399020212065,
+              "domContentLoadedEventStart": 1399020212065,
+              "domContentLoadedEventEnd": 1399020212065,
+              "domComplete": 1399020212102,
+              "loadEventStart": 1399020212103,
+              "loadEventEnd": 1399020212103,
+              "msFirstPaint": 1399020212104
+            },
+            "navigation": {
+              "redirectCount": 0,
+              "type": 0
+            }
+          },
+          "intervals": {
+            "domainLookupTime": 0,
+            "redirectionTime": 0,
+            "serverConnectionTime": 0,
+            "serverResponseTime": 1,
+            "pageDownloadTime": 1,
+            "domInteractiveTime": 125,
+            "domContentLoadedTime": 125,
+            "pageLoadTime": 163,
+            "frontEndTime": 76,
+            "backEndTime": 86
+          }
+        },
+        {
+          "timings": {
+            "timing": {
+              "navigationStart": 1399020212969,
+              "unloadEventStart": 1399020213061,
+              "unloadEventEnd": 1399020213061,
+              "redirectStart": 0,
+              "redirectEnd": 0,
+              "fetchStart": 1399020212969,
+              "domainLookupStart": 1399020212969,
+              "domainLookupEnd": 1399020212969,
+              "connectStart": 1399020212969,
+              "connectEnd": 1399020212969,
+              "requestStart": 1399020213055,
+              "responseStart": 1399020213056,
+              "responseEnd": 1399020213057,
+              "domLoading": 1399020213056,
+              "domInteractive": 1399020213095,
+              "domContentLoadedEventStart": 1399020213095,
+              "domContentLoadedEventEnd": 1399020213095,
+              "domComplete": 1399020213131,
+              "loadEventStart": 1399020213132,
+              "loadEventEnd": 1399020213132,
+              "msFirstPaint": 1399020213133
+            },
+            "navigation": {
+              "redirectCount": 0,
+              "type": 0
+            }
+          },
+          "intervals": {
+            "domainLookupTime": 0,
+            "redirectionTime": 0,
+            "serverConnectionTime": 0,
+            "serverResponseTime": 1,
+            "pageDownloadTime": 1,
+            "domInteractiveTime": 126,
+            "domContentLoadedTime": 126,
+            "pageLoadTime": 163,
+            "frontEndTime": 75,
+            "backEndTime": 87
+          }
+        }
+      ],
+      "stats": {
+        "domainLookupTime": {
+          "min": 0,
+          "max": 0,
+          "avg": 0,
+          "median": 0,
+          "mad": 0,
+          "p60": 0,
+          "p70": 0,
+          "p80": 0,
+          "p90": 0
+        },
+        "redirectionTime": {
+          "min": 0,
+          "max": 1,
+          "avg": 0.3333333333333333,
+          "median": 0,
+          "mad": 0,
+          "p60": 0,
+          "p70": 1,
+          "p80": 1,
+          "p90": 1
+        },
+        "serverConnectionTime": {
+          "min": 0,
+          "max": 0,
+          "avg": 0,
+          "median": 0,
+          "mad": 0,
+          "p60": 0,
+          "p70": 0,
+          "p80": 0,
+          "p90": 0
+        },
+        "serverResponseTime": {
+          "min": 1,
+          "max": 73,
+          "avg": 25,
+          "median": 1,
+          "mad": 0,
+          "p60": 1,
+          "p70": 73,
+          "p80": 73,
+          "p90": 73
+        },
+        "pageDownloadTime": {
+          "min": 1,
+          "max": 75,
+          "avg": 25.666666666666668,
+          "median": 1,
+          "mad": 0,
+          "p60": 1,
+          "p70": 75,
+          "p80": 75,
+          "p90": 75
+        },
+        "domInteractiveTime": {
+          "min": 125,
+          "max": 1066,
+          "avg": 439,
+          "median": 126,
+          "mad": 1,
+          "p60": 126,
+          "p70": 1066,
+          "p80": 1066,
+          "p90": 1066
+        },
+        "domContentLoadedTime": {
+          "min": 125,
+          "max": 1066,
+          "avg": 439,
+          "median": 126,
+          "mad": 1,
+          "p60": 126,
+          "p70": 1066,
+          "p80": 1066,
+          "p90": 1066
+        },
+        "pageLoadTime": {
+          "min": 163,
+          "max": 1164,
+          "avg": 496.6666666666667,
+          "median": 163,
+          "mad": 0,
+          "p60": 163,
+          "p70": 1164,
+          "p80": 1164,
+          "p90": 1164
+        },
+        "frontEndTime": {
+          "min": 75,
+          "max": 442,
+          "avg": 197.66666666666666,
+          "median": 76,
+          "mad": 1,
+          "p60": 76,
+          "p70": 442,
+          "p80": 442,
+          "p90": 442
+        },
+        "backEndTime": {
+          "min": 86,
+          "max": 647,
+          "avg": 273.3333333333333,
+          "median": 87,
+          "mad": 1,
+          "p60": 87,
+          "p70": 647,
+          "p80": 647,
+          "p90": 647
+        }
+      }
+    },
+    {
+      "url": "http://mkla.bz/saucelabs-browsertime/",
+      "platform": {
+        "browserName": "internet explorer",
+        "name": "Collecting Navigation Timings with internet explorer",
+        "tags": [
+          "sauce-browsertime"
+        ]
+      },
+      "data": [
+        {
+          "timings": {
+            "timing": {
+              "navigationStart": 1399020213955,
+              "unloadEventStart": 0,
+              "unloadEventEnd": 0,
+              "redirectStart": 0,
+              "redirectEnd": 0,
+              "fetchStart": 1399020214398,
+              "domainLookupStart": 1399020214398,
+              "domainLookupEnd": 1399020214398,
+              "connectStart": 1399020214398,
+              "connectEnd": 1399020214398,
+              "requestStart": 1399020214398,
+              "responseStart": 1399020214399,
+              "responseEnd": 1399020214485,
+              "domLoading": 1399020214399,
+              "domInteractive": 1399020214486,
+              "domContentLoadedEventStart": 1399020214486,
+              "domContentLoadedEventEnd": 1399020214486,
+              "domComplete": 1399020215457,
+              "loadEventStart": 1399020215458,
+              "loadEventEnd": 1399020215458,
+              "msFirstPaint": 1399020214459
+            },
+            "navigation": {
+              "redirectCount": 0,
+              "type": 0
+            }
+          },
+          "intervals": {
+            "domainLookupTime": 0,
+            "redirectionTime": 443,
+            "serverConnectionTime": 0,
+            "serverResponseTime": 1,
+            "pageDownloadTime": 86,
+            "domInteractiveTime": 531,
+            "domContentLoadedTime": 531,
+            "pageLoadTime": 1503,
+            "frontEndTime": 973,
+            "backEndTime": 444
+          }
+        },
+        {
+          "timings": {
+            "timing": {
+              "navigationStart": 1399020216362,
+              "unloadEventStart": 1399020216393,
+              "unloadEventEnd": 1399020216393,
+              "redirectStart": 0,
+              "redirectEnd": 0,
+              "fetchStart": 1399020216362,
+              "domainLookupStart": 1399020216363,
+              "domainLookupEnd": 1399020216363,
+              "connectStart": 1399020216363,
+              "connectEnd": 1399020216363,
+              "requestStart": 1399020216363,
+              "responseStart": 1399020216363,
+              "responseEnd": 1399020216364,
+              "domLoading": 1399020216363,
+              "domInteractive": 1399020216416,
+              "domContentLoadedEventStart": 1399020216416,
+              "domContentLoadedEventEnd": 1399020216416,
+              "domComplete": 1399020216494,
+              "loadEventStart": 1399020216495,
+              "loadEventEnd": 1399020216495,
+              "msFirstPaint": 1399020216426
+            },
+            "navigation": {
+              "redirectCount": 0,
+              "type": 0
+            }
+          },
+          "intervals": {
+            "domainLookupTime": 0,
+            "redirectionTime": 0,
+            "serverConnectionTime": 0,
+            "serverResponseTime": 0,
+            "pageDownloadTime": 1,
+            "domInteractiveTime": 54,
+            "domContentLoadedTime": 54,
+            "pageLoadTime": 133,
+            "frontEndTime": 131,
+            "backEndTime": 1
+          }
+        },
+        {
+          "timings": {
+            "timing": {
+              "navigationStart": 1399020217338,
+              "unloadEventStart": 1399020217357,
+              "unloadEventEnd": 1399020217357,
+              "redirectStart": 0,
+              "redirectEnd": 0,
+              "fetchStart": 1399020217338,
+              "domainLookupStart": 1399020217339,
+              "domainLookupEnd": 1399020217339,
+              "connectStart": 1399020217339,
+              "connectEnd": 1399020217339,
+              "requestStart": 1399020217339,
+              "responseStart": 1399020217339,
+              "responseEnd": 1399020217340,
+              "domLoading": 1399020217339,
+              "domInteractive": 1399020217375,
+              "domContentLoadedEventStart": 1399020217375,
+              "domContentLoadedEventEnd": 1399020217375,
+              "domComplete": 1399020217477,
+              "loadEventStart": 1399020217478,
+              "loadEventEnd": 1399020217478,
+              "msFirstPaint": 1399020217386
+            },
+            "navigation": {
+              "redirectCount": 0,
+              "type": 0
+            }
+          },
+          "intervals": {
+            "domainLookupTime": 0,
+            "redirectionTime": 0,
+            "serverConnectionTime": 0,
+            "serverResponseTime": 0,
+            "pageDownloadTime": 1,
+            "domInteractiveTime": 37,
+            "domContentLoadedTime": 37,
+            "pageLoadTime": 140,
+            "frontEndTime": 138,
+            "backEndTime": 1
+          }
+        }
+      ],
+      "stats": {
+        "domainLookupTime": {
+          "min": 0,
+          "max": 0,
+          "avg": 0,
+          "median": 0,
+          "mad": 0,
+          "p60": 0,
+          "p70": 0,
+          "p80": 0,
+          "p90": 0
+        },
+        "redirectionTime": {
+          "min": 0,
+          "max": 443,
+          "avg": 147.66666666666666,
+          "median": 0,
+          "mad": 0,
+          "p60": 0,
+          "p70": 443,
+          "p80": 443,
+          "p90": 443
+        },
+        "serverConnectionTime": {
+          "min": 0,
+          "max": 0,
+          "avg": 0,
+          "median": 0,
+          "mad": 0,
+          "p60": 0,
+          "p70": 0,
+          "p80": 0,
+          "p90": 0
+        },
+        "serverResponseTime": {
+          "min": 0,
+          "max": 1,
+          "avg": 0.3333333333333333,
+          "median": 0,
+          "mad": 0,
+          "p60": 0,
+          "p70": 1,
+          "p80": 1,
+          "p90": 1
+        },
+        "pageDownloadTime": {
+          "min": 1,
+          "max": 86,
+          "avg": 29.333333333333332,
+          "median": 1,
+          "mad": 0,
+          "p60": 1,
+          "p70": 86,
+          "p80": 86,
+          "p90": 86
+        },
+        "domInteractiveTime": {
+          "min": 37,
+          "max": 531,
+          "avg": 207.33333333333334,
+          "median": 54,
+          "mad": 17,
+          "p60": 54,
+          "p70": 531,
+          "p80": 531,
+          "p90": 531
+        },
+        "domContentLoadedTime": {
+          "min": 37,
+          "max": 531,
+          "avg": 207.33333333333334,
+          "median": 54,
+          "mad": 17,
+          "p60": 54,
+          "p70": 531,
+          "p80": 531,
+          "p90": 531
+        },
+        "pageLoadTime": {
+          "min": 133,
+          "max": 1503,
+          "avg": 592,
+          "median": 140,
+          "mad": 7,
+          "p60": 140,
+          "p70": 1503,
+          "p80": 1503,
+          "p90": 1503
+        },
+        "frontEndTime": {
+          "min": 131,
+          "max": 973,
+          "avg": 414,
+          "median": 138,
+          "mad": 7,
+          "p60": 138,
+          "p70": 973,
+          "p80": 973,
+          "p90": 973
+        },
+        "backEndTime": {
+          "min": 1,
+          "max": 444,
+          "avg": 148.66666666666666,
+          "median": 1,
+          "mad": 0,
+          "p60": 1,
+          "p70": 444,
+          "p80": 444,
+          "p90": 444
+        }
+      }
+    },
+    {
+      "url": "http://mkla.bz/saucelabs-browsertime/results/",
+      "platform": {
+        "browserName": "internet explorer",
+        "name": "Collecting Navigation Timings with internet explorer",
+        "tags": [
+          "sauce-browsertime"
+        ]
+      },
+      "data": [
+        {
+          "timings": {
+            "timing": {
+              "navigationStart": 1399020218328,
+              "unloadEventStart": 1399020218426,
+              "unloadEventEnd": 1399020218426,
+              "redirectStart": 0,
+              "redirectEnd": 0,
+              "fetchStart": 1399020218328,
+              "domainLookupStart": 1399020218328,
+              "domainLookupEnd": 1399020218328,
+              "connectStart": 1399020218328,
+              "connectEnd": 1399020218328,
+              "requestStart": 1399020218404,
+              "responseStart": 1399020218405,
+              "responseEnd": 1399020218406,
+              "domLoading": 1399020218405,
+              "domInteractive": 1399020218449,
+              "domContentLoadedEventStart": 1399020218449,
+              "domContentLoadedEventEnd": 1399020218449,
+              "domComplete": 1399020218457,
+              "loadEventStart": 1399020218458,
+              "loadEventEnd": 1399020218458,
+              "msFirstPaint": 1399020218459
+            },
+            "navigation": {
+              "redirectCount": 0,
+              "type": 0
+            }
+          },
+          "intervals": {
+            "domainLookupTime": 0,
+            "redirectionTime": 0,
+            "serverConnectionTime": 0,
+            "serverResponseTime": 1,
+            "pageDownloadTime": 1,
+            "domInteractiveTime": 121,
+            "domContentLoadedTime": 121,
+            "pageLoadTime": 130,
+            "frontEndTime": 52,
+            "backEndTime": 77
+          }
+        },
+        {
+          "timings": {
+            "timing": {
+              "navigationStart": 1399020219353,
+              "unloadEventStart": 1399020219375,
+              "unloadEventEnd": 1399020219375,
+              "redirectStart": 0,
+              "redirectEnd": 0,
+              "fetchStart": 1399020219353,
+              "domainLookupStart": 1399020219355,
+              "domainLookupEnd": 1399020219355,
+              "connectStart": 1399020219355,
+              "connectEnd": 1399020219355,
+              "requestStart": 1399020219355,
+              "responseStart": 1399020219355,
+              "responseEnd": 1399020219356,
+              "domLoading": 1399020219355,
+              "domInteractive": 1399020219402,
+              "domContentLoadedEventStart": 1399020219402,
+              "domContentLoadedEventEnd": 1399020219402,
+              "domComplete": 1399020219408,
+              "loadEventStart": 1399020219409,
+              "loadEventEnd": 1399020219409,
+              "msFirstPaint": 1399020219410
+            },
+            "navigation": {
+              "redirectCount": 0,
+              "type": 0
+            }
+          },
+          "intervals": {
+            "domainLookupTime": 0,
+            "redirectionTime": 0,
+            "serverConnectionTime": 0,
+            "serverResponseTime": 0,
+            "pageDownloadTime": 1,
+            "domInteractiveTime": 49,
+            "domContentLoadedTime": 49,
+            "pageLoadTime": 56,
+            "frontEndTime": 53,
+            "backEndTime": 2
+          }
+        },
+        {
+          "timings": {
+            "timing": {
+              "navigationStart": 1399020220280,
+              "unloadEventStart": 1399020220302,
+              "unloadEventEnd": 1399020220302,
+              "redirectStart": 0,
+              "redirectEnd": 0,
+              "fetchStart": 1399020220280,
+              "domainLookupStart": 1399020220282,
+              "domainLookupEnd": 1399020220282,
+              "connectStart": 1399020220282,
+              "connectEnd": 1399020220282,
+              "requestStart": 1399020220282,
+              "responseStart": 1399020220282,
+              "responseEnd": 1399020220283,
+              "domLoading": 1399020220282,
+              "domInteractive": 1399020220331,
+              "domContentLoadedEventStart": 1399020220331,
+              "domContentLoadedEventEnd": 1399020220331,
+              "domComplete": 1399020220337,
+              "loadEventStart": 1399020220338,
+              "loadEventEnd": 1399020220338,
+              "msFirstPaint": 1399020220342
+            },
+            "navigation": {
+              "redirectCount": 0,
+              "type": 0
+            }
+          },
+          "intervals": {
+            "domainLookupTime": 0,
+            "redirectionTime": 0,
+            "serverConnectionTime": 0,
+            "serverResponseTime": 0,
+            "pageDownloadTime": 1,
+            "domInteractiveTime": 51,
+            "domContentLoadedTime": 51,
+            "pageLoadTime": 58,
+            "frontEndTime": 55,
+            "backEndTime": 2
+          }
+        }
+      ],
+      "stats": {
+        "domainLookupTime": {
+          "min": 0,
+          "max": 0,
+          "avg": 0,
+          "median": 0,
+          "mad": 0,
+          "p60": 0,
+          "p70": 0,
+          "p80": 0,
+          "p90": 0
+        },
+        "redirectionTime": {
+          "min": 0,
+          "max": 0,
+          "avg": 0,
+          "median": 0,
+          "mad": 0,
+          "p60": 0,
+          "p70": 0,
+          "p80": 0,
+          "p90": 0
+        },
+        "serverConnectionTime": {
+          "min": 0,
+          "max": 0,
+          "avg": 0,
+          "median": 0,
+          "mad": 0,
+          "p60": 0,
+          "p70": 0,
+          "p80": 0,
+          "p90": 0
+        },
+        "serverResponseTime": {
+          "min": 0,
+          "max": 1,
+          "avg": 0.3333333333333333,
+          "median": 0,
+          "mad": 0,
+          "p60": 0,
+          "p70": 1,
+          "p80": 1,
+          "p90": 1
+        },
+        "pageDownloadTime": {
+          "min": 1,
+          "max": 1,
+          "avg": 1,
+          "median": 1,
+          "mad": 0,
+          "p60": 1,
+          "p70": 1,
+          "p80": 1,
+          "p90": 1
+        },
+        "domInteractiveTime": {
+          "min": 49,
+          "max": 121,
+          "avg": 73.66666666666667,
+          "median": 51,
+          "mad": 2,
+          "p60": 51,
+          "p70": 121,
+          "p80": 121,
+          "p90": 121
+        },
+        "domContentLoadedTime": {
+          "min": 49,
+          "max": 121,
+          "avg": 73.66666666666667,
+          "median": 51,
+          "mad": 2,
+          "p60": 51,
+          "p70": 121,
+          "p80": 121,
+          "p90": 121
+        },
+        "pageLoadTime": {
+          "min": 56,
+          "max": 130,
+          "avg": 81.33333333333333,
+          "median": 58,
+          "mad": 2,
+          "p60": 58,
+          "p70": 130,
+          "p80": 130,
+          "p90": 130
+        },
+        "frontEndTime": {
+          "min": 52,
+          "max": 55,
+          "avg": 53.333333333333336,
+          "median": 53,
+          "mad": 1,
+          "p60": 53,
+          "p70": 55,
+          "p80": 55,
+          "p90": 55
+        },
+        "backEndTime": {
+          "min": 2,
+          "max": 77,
+          "avg": 27,
+          "median": 2,
+          "mad": 0,
+          "p60": 2,
+          "p70": 77,
+          "p80": 77,
+          "p90": 77
+        }
+      }
+    },
+    {
+      "url": "http://mkla.bz/saucelabs-browsertime/results/last/",
+      "platform": {
+        "browserName": "internet explorer",
+        "name": "Collecting Navigation Timings with internet explorer",
+        "tags": [
+          "sauce-browsertime"
+        ]
+      },
+      "data": [
+        {
+          "timings": {
+            "timing": {
+              "navigationStart": 1399020221268,
+              "unloadEventStart": 1399020221348,
+              "unloadEventEnd": 1399020221348,
+              "redirectStart": 0,
+              "redirectEnd": 0,
+              "fetchStart": 1399020221268,
+              "domainLookupStart": 1399020221268,
+              "domainLookupEnd": 1399020221268,
+              "connectStart": 1399020221268,
+              "connectEnd": 1399020221268,
+              "requestStart": 1399020221344,
+              "responseStart": 1399020221345,
+              "responseEnd": 1399020221346,
+              "domLoading": 1399020221345,
+              "domInteractive": 1399020221363,
+              "domContentLoadedEventStart": 1399020221363,
+              "domContentLoadedEventEnd": 1399020221363,
+              "domComplete": 1399020221369,
+              "loadEventStart": 1399020221370,
+              "loadEventEnd": 1399020221370,
+              "msFirstPaint": 1399020221371
+            },
+            "navigation": {
+              "redirectCount": 0,
+              "type": 0
+            }
+          },
+          "intervals": {
+            "domainLookupTime": 0,
+            "redirectionTime": 0,
+            "serverConnectionTime": 0,
+            "serverResponseTime": 1,
+            "pageDownloadTime": 1,
+            "domInteractiveTime": 95,
+            "domContentLoadedTime": 95,
+            "pageLoadTime": 102,
+            "frontEndTime": 24,
+            "backEndTime": 77
+          }
+        },
+        {
+          "timings": {
+            "timing": {
+              "navigationStart": 1399020222228,
+              "unloadEventStart": 1399020222309,
+              "unloadEventEnd": 1399020222309,
+              "redirectStart": 0,
+              "redirectEnd": 0,
+              "fetchStart": 1399020222228,
+              "domainLookupStart": 1399020222228,
+              "domainLookupEnd": 1399020222228,
+              "connectStart": 1399020222228,
+              "connectEnd": 1399020222228,
+              "requestStart": 1399020222304,
+              "responseStart": 1399020222305,
+              "responseEnd": 1399020222307,
+              "domLoading": 1399020222305,
+              "domInteractive": 1399020222330,
+              "domContentLoadedEventStart": 1399020222330,
+              "domContentLoadedEventEnd": 1399020222330,
+              "domComplete": 1399020222333,
+              "loadEventStart": 1399020222334,
+              "loadEventEnd": 1399020222334,
+              "msFirstPaint": 1399020222335
+            },
+            "navigation": {
+              "redirectCount": 0,
+              "type": 0
+            }
+          },
+          "intervals": {
+            "domainLookupTime": 0,
+            "redirectionTime": 0,
+            "serverConnectionTime": 0,
+            "serverResponseTime": 1,
+            "pageDownloadTime": 2,
+            "domInteractiveTime": 102,
+            "domContentLoadedTime": 102,
+            "pageLoadTime": 106,
+            "frontEndTime": 27,
+            "backEndTime": 77
+          }
+        },
+        {
+          "timings": {
+            "timing": {
+              "navigationStart": 1399020223244,
+              "unloadEventStart": 1399020223325,
+              "unloadEventEnd": 1399020223325,
+              "redirectStart": 0,
+              "redirectEnd": 0,
+              "fetchStart": 1399020223244,
+              "domainLookupStart": 1399020223244,
+              "domainLookupEnd": 1399020223244,
+              "connectStart": 1399020223244,
+              "connectEnd": 1399020223244,
+              "requestStart": 1399020223319,
+              "responseStart": 1399020223320,
+              "responseEnd": 1399020223323,
+              "domLoading": 1399020223320,
+              "domInteractive": 1399020223341,
+              "domContentLoadedEventStart": 1399020223341,
+              "domContentLoadedEventEnd": 1399020223341,
+              "domComplete": 1399020223344,
+              "loadEventStart": 1399020223345,
+              "loadEventEnd": 1399020223345,
+              "msFirstPaint": 1399020223346
+            },
+            "navigation": {
+              "redirectCount": 0,
+              "type": 0
+            }
+          },
+          "intervals": {
+            "domainLookupTime": 0,
+            "redirectionTime": 0,
+            "serverConnectionTime": 0,
+            "serverResponseTime": 1,
+            "pageDownloadTime": 3,
+            "domInteractiveTime": 97,
+            "domContentLoadedTime": 97,
+            "pageLoadTime": 101,
+            "frontEndTime": 22,
+            "backEndTime": 76
+          }
+        }
+      ],
+      "stats": {
+        "domainLookupTime": {
+          "min": 0,
+          "max": 0,
+          "avg": 0,
+          "median": 0,
+          "mad": 0,
+          "p60": 0,
+          "p70": 0,
+          "p80": 0,
+          "p90": 0
+        },
+        "redirectionTime": {
+          "min": 0,
+          "max": 0,
+          "avg": 0,
+          "median": 0,
+          "mad": 0,
+          "p60": 0,
+          "p70": 0,
+          "p80": 0,
+          "p90": 0
+        },
+        "serverConnectionTime": {
+          "min": 0,
+          "max": 0,
+          "avg": 0,
+          "median": 0,
+          "mad": 0,
+          "p60": 0,
+          "p70": 0,
+          "p80": 0,
+          "p90": 0
+        },
+        "serverResponseTime": {
+          "min": 1,
+          "max": 1,
+          "avg": 1,
+          "median": 1,
+          "mad": 0,
+          "p60": 1,
+          "p70": 1,
+          "p80": 1,
+          "p90": 1
+        },
+        "pageDownloadTime": {
+          "min": 1,
+          "max": 3,
+          "avg": 2,
+          "median": 2,
+          "mad": 1,
+          "p60": 2,
+          "p70": 3,
+          "p80": 3,
+          "p90": 3
+        },
+        "domInteractiveTime": {
+          "min": 95,
+          "max": 102,
+          "avg": 98,
+          "median": 97,
+          "mad": 2,
+          "p60": 97,
+          "p70": 102,
+          "p80": 102,
+          "p90": 102
+        },
+        "domContentLoadedTime": {
+          "min": 95,
+          "max": 102,
+          "avg": 98,
+          "median": 97,
+          "mad": 2,
+          "p60": 97,
+          "p70": 102,
+          "p80": 102,
+          "p90": 102
+        },
+        "pageLoadTime": {
+          "min": 101,
+          "max": 106,
+          "avg": 103,
+          "median": 102,
+          "mad": 1,
+          "p60": 102,
+          "p70": 106,
+          "p80": 106,
+          "p90": 106
+        },
+        "frontEndTime": {
+          "min": 22,
+          "max": 27,
+          "avg": 24.333333333333332,
+          "median": 24,
+          "mad": 2,
+          "p60": 24,
+          "p70": 27,
+          "p80": 27,
+          "p90": 27
+        },
+        "backEndTime": {
+          "min": 76,
+          "max": 77,
+          "avg": 76.66666666666667,
+          "median": 77,
+          "mad": 0,
+          "p60": 77,
+          "p70": 77,
+          "p80": 77,
+          "p90": 77
+        }
+      }
+    }
+  ]
+}
