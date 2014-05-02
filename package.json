@@ -1,6 +1,6 @@
 {
   "name": "saucelabs-browsertime",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Collects Navigation Timing through Webdriver with SauceLabs",
   "bin": {
     "sauce-browsertime": "bin/sauce-browsertime",
