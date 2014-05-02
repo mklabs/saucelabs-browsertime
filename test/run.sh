@@ -2,7 +2,7 @@
 
 BUILD_NUMBER=${BUILD_NUMBER:-last}
 BUILD_NUMBER=${TRAVIS_COMMIT:-last}
-SAUCE_BROWSERS='chrome, firefox, ie'
+SAUCE_BROWSERS='chrome, firefox'
 PERF_URLS=${PERF_URLS:-"http://caniuse.com/nav-timing https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/NavigationTiming/Overview.html"}
 PERF_RUNS=3
 
@@ -20,14 +20,10 @@ for browser in $BROWSERS; do
   mkdir -p $RESULT_DIR/$browser
   bro=$browser
 
-  if [[ "ie" == $browser ]]; then bro="internet explorer"; fi
-
   node bin/sauce-browsertime $PERF_URLS --browser "$bro" -n $PERF_RUNS \
     --output $RESULT_DIR/$browser/metrics.json \
     --reporter spec || exit 1
 
-  if [[ "ie" == $browser ]]; then bro="internet explorer"; fi
-  if [[ "android" == $browser ]]; then bro="chrome-android"; fi
   node bin/sauce-browsertime-html $RESULT_DIR/$browser/metrics.json -b "$bro" > $RESULT_DIR/$browser/index.html
   node bin/sauce-browsertime-html $RESULT_DIR/$browser/metrics.json -b "$bro" >  $RESULT_DIR/$browser.html
   head -n 75 $RESULT_DIR/$browser/metrics.json
