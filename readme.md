@@ -3,6 +3,10 @@
 
 Using Webdriver to collect Navigation Timing.
 
+[Travis job runs](http://mkla.bz/saucelabs-browsertime/results/) /
+[Build #51](http://mkla.bz/saucelabs-browsertime/results/51/) /
+[JSON output](http://mkla.bz/saucelabs-browsertime/results/51/chrome/metrics.json)
+
 ```
 Usage: sauce-browsertime [options] [urls, ...]
 
@@ -32,9 +36,6 @@ Available stats: min, max, avg, media, mad, p60, p70, p80, p90
 ```
 
 Every webdriver enabled browser on [Saucelabs](https://saucelabs.com/platforms), implementing [Navigation Timing API](http://caniuse.com/#feat=nav-timing) should be supported.
-
-- [Travis job runs](http://mkla.bz/saucelabs-browsertime/results/)
-- [Examples](http://mkla.bz/saucelabs-browsertime/results/50/)
 
 ## Install
 
