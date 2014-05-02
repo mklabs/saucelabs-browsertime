@@ -12,7 +12,7 @@ git checkout $DEPLOY_BRANCH || exit 1
 echo "Branch set up to origin/$DEPLOY_BRANCH"
 echo "Cd to Build #$TRAVIS_BUILD_NUMBER directory"
 
-cd results/$TRAVIS_BUILD_NUMBER || exit 1
+cd results || exit 1
 ls -la || exit 1
 
 git add . -f || exit 1
