@@ -12,6 +12,7 @@ git checkout -b build-$TRAVIS_BUILD_NUMBER
 echo "Branch set up to build-$TRAVIS_BUILD_NUMBER"
 git status | exit 1
 echo "Adding results"
+ls -la results || exit 1
 git add results -f || exit 1
 git add index.html || exit 1
 git status || exit 1

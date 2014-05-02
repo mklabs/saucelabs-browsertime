@@ -21,5 +21,8 @@
     "hogan.js": "^2.0.0",
     "simple-statistics": "^0.8.0",
     "mkdirp": "^0.4.0"
+  },
+  "devDependencies": {
+    "marked": "^0.3.2"
   }
 }

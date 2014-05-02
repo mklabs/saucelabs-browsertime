@@ -41,4 +41,4 @@ rm -rf result/last
 cp -r $RESULT_DIR results/last
 
 echo "... Generate index.html ..."
-node test/build-index.js $RESULT_DIR index > index.html
+node test/build-index.js $RESULT_DIR index readme.md > index.html
