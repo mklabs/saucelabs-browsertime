@@ -17,7 +17,7 @@ ls -la || exit 1
 
 git add . -f || exit 1
 git status || exit 1
-git commit -m "Configure Travis to build and publish site" || exit 1
+git commit -m "Build #$TRAVIS_BUILD_NUMBER - Publishing $TRAVIS_COMMIT results" || exit 1
 echo "Pushing to repo.."
 git push origin $DEPLOY_BRANCH || exit 1
 echo "Published"
