@@ -26,7 +26,6 @@ EOF
 git checkout -b $DEPLOY_BRANCH origin/$DEPLOY_BRANCH || exit 1
 
 git status
-git show
 
 echo "Merging build-$TRAVIS_BUILD_NUMBER -> $DEPLOY_BRANCH"
 git merge build-$TRAVIS_BUILD_NUMBER -s recursive -X theirs -m "Travis merge build $TRAVIS_BUILD_NUMBER" || exit 1
