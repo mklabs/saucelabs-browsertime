@@ -1,7 +1,7 @@
 #!/bin/bash
 
 BUILD_NUMBER=${BUILD_NUMBER:-last}
-BUILD_NUMBER=${TRAVIS_COMMIT:-last}
+BUILD_NUMBER=${TRAVIS_BUILD_NUMBER:-last}
 SAUCE_BROWSERS='chrome, firefox'
 PERF_URLS=${PERF_URLS:-"http://caniuse.com/nav-timing https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/NavigationTiming/Overview.html"}
 PERF_RUNS=3
