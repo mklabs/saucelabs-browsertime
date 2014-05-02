@@ -24,9 +24,8 @@ for browser in $BROWSERS; do
     --output $RESULT_DIR/$browser/metrics.json \
     --reporter spec || exit 1
 
-  node bin/sauce-browsertime-html $RESULT_DIR/$browser/metrics.json -b "$bro" > $RESULT_DIR/$browser/index.html
-  node bin/sauce-browsertime-html $RESULT_DIR/$browser/metrics.json -b "$bro" >  $RESULT_DIR/$browser.html
-  head -n 75 $RESULT_DIR/$browser/metrics.json
+  DEBUG=* node bin/sauce-browsertime-html $RESULT_DIR/$browser/metrics.json -b "$bro" > $RESULT_DIR/$browser/index.html
+  DEBUG=* node bin/sauce-browsertime-html $RESULT_DIR/$browser/metrics.json -b "$bro" >  $RESULT_DIR/$browser.html
 done
 
 cat > build-index.js << EOF
