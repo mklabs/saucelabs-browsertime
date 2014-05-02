@@ -1,5 +1,5 @@
 
-# Saucelabs Browsertime
+# Saucelabs Browsertime [![Build Status](https://travis-ci.org/mklabs/saucelabs-browsertime.svg?branch=master)](https://travis-ci.org/mklabs/saucelabs-browsertime)
 
 Using Webdriver to collect Navigation Timing, on Saucelabs.
 

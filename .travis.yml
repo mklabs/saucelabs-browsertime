@@ -1,9 +1,19 @@
-language: node_js
-node_js:
-  - 0.11
-  - 0.10
-
 env:
   global:
-    - SAUCE_USERNAME=mklabs
-    - secure: "FV+pZI1cjsa7PV+N4sr+VA03CeoqrlGpmvbo2YZ2Wp/eMUFUd+ZdaGic6RUSaLjvAF6aY6RickZ4zWjdYI1A3OXrWcknQzE+u1OQuwOYSb1tqn9aSJm93KFiPSthJetRbrUnXqDkgRELufWU2VeP9ZCx3SgGOXZZypktQCG1E6U="
+  - SAUCE_USERNAME=mklabs
+  - GH_REPO="mklabs/saucelabs-browsertime"
+  - DEPLOY_BRANCH="gh-pages"
+  - secure: FV+pZI1cjsa7PV+N4sr+VA03CeoqrlGpmvbo2YZ2Wp/eMUFUd+ZdaGic6RUSaLjvAF6aY6RickZ4zWjdYI1A3OXrWcknQzE+u1OQuwOYSb1tqn9aSJm93KFiPSthJetRbrUnXqDkgRELufWU2VeP9ZCx3SgGOXZZypktQCG1E6U=
+  - secure: jBrGjOri0SsMBvExQ8hvb3eutdJnVVnfzZTk/qdB+9qZfmisje/j5PAGxcI8YsKxUXpwzA60s0lVgqMX3yY2gnhZSK0vrVD0s7qmHJA5u8EO111W5xLsDMbRUT9Zj7mX/DQwglQ0mZ+kt7nFOPRPJF8UCS+weGc731ZWhBn/gSI=
+
+node_js:
+  - 0.10
+
+language: node_js
+
+before_script:
+  - export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
+  - ./test/prebuild.sh
+
+after_script:
+  - ./test/publish.sh
