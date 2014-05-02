@@ -29,6 +29,7 @@ git merge build-$TRAVIS_BUILD_NUMBER -s ours -m "Travis merge build $TRAVIS_BUIL
 echo "Cleanup build branch: b-$TRAVIS_BUILD_NUMBER"
 git branch -D build-$TRAVIS_BUILD_NUMBER
 
+git status
 echo "Pushing to repo.."
-git push origin $DEPLOY_BRANCH || exit 1
+git push origin $DEPLOY_BRANCH -q || exit 1
 echo "Published"
