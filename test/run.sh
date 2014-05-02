@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 BUILD_NUMBER=${BUILD_NUMBER:-last}
 BUILD_NUMBER=${TRAVIS_COMMIT:-last}

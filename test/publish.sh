@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 git remote set-branches --add origin $DEPLOY_BRANCH || exit 1
 git fetch -q || exit 1
 git branch $DEPLOY_BRANCH origin/$DEPLOY_BRANCH || exit 1
