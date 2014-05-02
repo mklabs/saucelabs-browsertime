@@ -16,11 +16,12 @@ git add results -f || exit 1
 git add index.html || exit 1
 git status || exit 1
 
-git commit -m "Build #$TRAVIS_BUILD_NUMBER - Publishing $TRAVIS_COMMIT results\n\n$DEPLOY_URL/results/$TRAVIS_BUILD_NUMBER" || exit 1
+msg="[![Build Status](https://travis-ci.org/mklabs/saucelabs-browsertime.svg?branch=master)](https://travis-ci.org/mklabs/saucelabs-browsertime) - Travis publish $TRAVIS_COMMIT results\n\n$DEPLOY_URL/results/$TRAVIS_BUILD_NUMBER"
+git commit -m $msg || exit 1
 
 echo "Merging build-$TRAVIS_BUILD_NUMBER -> $DEPLOY_BRANCH"
 git checkout $DEPLOY_BRANCH || exit 1
-git merge build-$TRAVIS_BUILD_NUMBER -s ours || exit 1
+git merge build-$TRAVIS_BUILD_NUMBER -s ours -m $msg || exit 1
 
 echo "Cleanup build branch: b-$TRAVIS_BUILD_NUMBER"
 git branch -D build-$TRAVIS_BUILD_NUMBER
