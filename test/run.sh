@@ -26,9 +26,6 @@ for browser in $BROWSERS; do
     --output $RESULT_DIR/$browser/metrics.json \
     --reporter spec || exit 1
 
-  [[ "android" == $browser ]] && bro="chrome-android"
-  [[ "ie" == $browser ]] && bro="internet-explorer"
-
   if [[ "ie" == $browser ]]; then bro="internet explorer"; fi
   if [[ "android" == $browser ]]; then bro="chrome-android"; fi
   node bin/sauce-browsertime-html $RESULT_DIR/$browser/metrics.json -b "$bro" > $RESULT_DIR/$browser/index.html
