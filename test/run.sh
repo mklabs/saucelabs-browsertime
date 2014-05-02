@@ -2,7 +2,7 @@
 
 BUILD_NUMBER=${BUILD_NUMBER:-last}
 BUILD_NUMBER=${TRAVIS_COMMIT:-last}
-SAUCE_BROWSERS=${SAUCE_BROWSERS:-'chrome, firefox, ie'}
+SAUCE_BROWSERS='chrome, firefox, ie'
 PERF_URLS=${PERF_URLS:-"http://caniuse.com/nav-timing https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/NavigationTiming/Overview.html http://kelkoo.fr"}
 PERF_RUNS=3
 
@@ -17,6 +17,8 @@ BROWSERS_HTML=$(node -pe "b = '$SAUCE_BROWSERS'; b.split(/,\s?/).join('.html ')"
 PATH=./bin:$PATH
 
 rm -rf results/last
+
+env
 
 for browser in $BROWSERS; do
   mkdir -p $RESULT_DIR/$browser
