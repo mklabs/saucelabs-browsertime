@@ -8,7 +8,7 @@ CWD=$(pwd)
 
 RESULT_DIR=results/$BUILD_NUMBER
 
-BROWSERS=$(node -pe "b = 'require('./test/browsers.json').browsers.join(' ')")
+BROWSERS=$(node -pe "b = require('./test/browsers.json').browsers.join(' ')")
 
 echo "Output: $RESULT_DIR"
 
