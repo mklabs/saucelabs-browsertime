@@ -50,7 +50,7 @@ var files = fs.readdirSync(dir).filter(function(file) {
   return index ? fs.statSync(path.join(dir, file)).isDirectory() : path.extname(file) === '.html' && file !== 'index.html';
 });
 
-var imgs = links ? files.map(function(file) {
+var links = index ? files.map(function(file) {
   var link = '<a href="' + file + '">Build #' + file + '</a>';
   return '<p>' + link + '</p>';
 }) : files.map(function(file) {
