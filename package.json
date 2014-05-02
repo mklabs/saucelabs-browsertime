@@ -8,7 +8,9 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "sh test/run.sh"
+    "test": "sh test/run.sh",
+    "prebuild": "sh test/prebuild.sh",
+    "postbuild": "sh test/postbuild.sh"
   },
   "license": "ISC",
   "dependencies": {
